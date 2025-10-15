@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A collection of delicious recipes you can search and explore." />
+  <meta name="author" content="Alex Sisson" />
+
+  <meta property="og:title" content="Recipe Book" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A collection of delicious recipes you can search and explore." />
+  <meta property="og:image" content="images/recipe-book.png" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Recipe Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+
+  <header>
+    <h1>
+      <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo" />
+      Recipe Book
+    </h1>
+  </header>
+
+  <form id="search-form" aria-label="Search recipes">
+    <div class="search-wrapper">
+      <input
+        type="search"
+        id="search-input"
+        name="search-input"
+        placeholder="Find a recipe"
+        aria-label="Search recipes"
+        autocomplete="off"
+      />
+      <button type="submit" aria-label="Search recipes">🔍</button>
+    </div>
+  </form>
+
+  <main id="recipes-container" tabindex="-1" aria-live="polite" aria-relevant="additions removals">
+  </main>
+
+
+  <footer>
+     <p class="attribution">
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons" target="_blank" rel="noopener noreferrer">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+    </p>
+
+    <div class="social">
+      <a href="#"><img src="images/instagram_icon.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/youtube_icon.svg" alt="YouTube" /></a>
+      <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest" /></a>
+    </div>
+
+  </footer>
+
+  <script src="recipes.js" defer></script>
+</body>
+</html>
